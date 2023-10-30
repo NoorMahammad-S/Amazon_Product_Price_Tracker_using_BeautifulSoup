@@ -81,6 +81,4 @@ If you'd like to contribute to this project or have suggestions for improvements
 This script is provided for educational and personal use only. Use it responsibly and ensure compliance with Amazon's terms of service.
 
 ---
-
 **Note:** Please be cautious when including sensitive information (such as email and password) directly in your code. Consider using environment variables or a more secure method to store and access sensitive information.
-```
