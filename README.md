@@ -29,25 +29,52 @@ Before using this script, you need to:
 
 ## Usage
 
-1. Replace `"Your Email Id"` and `"Your Password"` with your Gmail email address and password in the script.
+1. Clone this repository to your local machine.
 
-2. Set your target price in the `BUY_PRICE` variable.
+   ```bash
+   git clone https://github.com/NoorMahammad-S/amazon-price-tracker.git
+   ```
 
-3. Run the script:
+2. Install the required Python libraries.
+
+   ```bash
+   pip install requests lxml beautifulsoup4
+   ```
+
+3. Update the script with your email and password.
+
+   - Replace `Your Email Id` with your Gmail email address.
+   - Replace `Your Password` with your Gmail password (consider using an app-specific password for security).
+
+4. Set your target price by changing the `BUY_PRICE` variable in the script.
+
+5. Run the script:
 
    ```bash
    python amazon_price_tracker.py
    ```
 
-4. The script will check the price of the Amazon product and send an email notification if the price drops below your target.
+6. The script will periodically check the price of the specified Amazon product and send you an email notification if it drops below your defined threshold.
+
+## Configuration
+
+You can customize the following variables in the script:
+
+- `BUY_PRICE`: The target price at which you want to receive an email alert.
+- `url`: The URL of the Amazon product you want to track.
+- `my_email`: Your Gmail email address.
+- `password`: Your Gmail password (consider using an app-specific password for security).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
 If you'd like to contribute to this project or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Acknowledgments
+- This project was inspired by the need to track prices of products on Amazon.
 
 ## Disclaimer
 
